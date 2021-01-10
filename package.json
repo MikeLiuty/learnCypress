@@ -1,0 +1,22 @@
+{
+  "name": "learncypress",
+  "version": "1.0.0",
+  "description": "Cypress practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeLiuty/learnCypress.git"
+  },
+  "author": "Mike Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeLiuty/learnCypress/issues"
+  },
+  "homepage": "https://github.com/MikeLiuty/learnCypress#readme",
+  "dependencies": {
+    "cypress": "^6.2.1"
+  }
+}
