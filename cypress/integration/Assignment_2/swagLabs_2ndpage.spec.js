@@ -3,6 +3,7 @@ Test cases:
 1. All the elements should be visible on the page.
 2. Adding one item to the cart the button should change to "remove", and going through all six of them, "add on cart" should not visible anymore. The cart item number on the page will be shown 6, then click the cart icon, all six items should be in the cart with 1 qulity for each of them. 
 3. Click drop down menu and select price high to low, "Sauce Labs Fleece Jacket" should be on the top
+4. Clicking shopping cart should nevagate to the cart page
 */
 
 
@@ -33,7 +34,7 @@ it('adding to cart should change button and shown in the cart',()=>{
     
     cy.get('button').contains('REMOVE').should('not.be.exist');
     for(let n = 0; n < 3; n ++){
-    cy.get('.inventory_list').find('button').eq(n).click();
+        cy.get('.inventory_list').find('button').eq(n).click();
     }
     cy.get('button:contains("REMOVE")').should('have.length','3');
     cy.get('.fa-layers-counter').should('be.visible').should('have.text','3');
@@ -44,4 +45,10 @@ it('Drop down menu will change the item order',()=>{
     cy.get('select').select('Price (high to low)')
     cy.get('.inventory_item').eq(0).should('contain','Sauce Labs Fleece Jacket');
 }) 
+
+//4. Clicking shopping cart should nevagate to the cart page
+it('cart icon should nevagate to the cart page', ()=> {
+    cy.get('#shopping_cart_container').click();
+    cy.url().should('include', 'https://www.saucedemo.com/cart.html');
+})
 })
