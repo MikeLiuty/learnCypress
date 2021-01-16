@@ -9,10 +9,6 @@ Test cases:
     7. Special characters and space should be valid for username and password
     8. Locked out user should not able to login - Check the message
     9. Standard user should able to login
-
-    5. Performance glich user should able to login
- 
-    11. Check if api saved the username and password? 
 */
 
 context('Actions', ()=> {
