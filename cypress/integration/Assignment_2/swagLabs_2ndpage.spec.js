@@ -7,7 +7,7 @@ Test cases:
 */
 
 
-context ('Auctions', () =>{
+context ('Actions', () =>{
     beforeEach(() => {
         cy.visit('https://www.saucedemo.com/');
         cy.get('#user-name')

@@ -1,0 +1,12 @@
+{
+    "profile_info": {
+      "firstName": "FirstName",
+      "lastName": "lastName",
+      "Email": "Email@test.com",
+      "Gender": "Male",
+      "Mobile": "1234567890",
+      "State": "NCR",
+      "City": "Noida"
+    }
+}
+  
