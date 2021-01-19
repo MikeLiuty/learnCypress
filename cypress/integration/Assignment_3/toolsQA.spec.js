@@ -62,6 +62,8 @@ context ('Actions', () =>{
                 .should('contain','State and City')
                 .should('contain',JSON.stringify(profileData.profile_info.State).replace(/\"/g, ""))
                 .should('contain',JSON.stringify(profileData.profile_info.City).replace(/\"/g, ""))
+
+            cy.get('#closeLargeModal').click()
         })
     })
 })
