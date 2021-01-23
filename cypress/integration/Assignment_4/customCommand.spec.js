@@ -1,6 +1,6 @@
 context('Actions', () => {
     it('number of items should able to be added and cleared',()=>{
-        cy.addToCart('6');
+        cy.addToCart('2');
         cy.clearCart();
     })
     it('cart icon should nevagate to the cart page', ()=> {
