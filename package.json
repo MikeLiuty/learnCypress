@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/MikeLiuty/learnCypress#readme",
   "dependencies": {
-    "cypress": "^6.2.1"
+    "@popperjs/core": "^2.6.0",
+    "cypress": "^6.2.1",
+    "cypress-xpath": "^1.6.1"
   }
 }

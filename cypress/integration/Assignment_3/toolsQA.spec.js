@@ -6,19 +6,19 @@ context ('Actions', () =>{
 
     it('Wait the button appear - by using timeout',() => {
         cy.visit('dynamic-properties')
-        cy.get('#visibleAfter',{timeout:60000}).should('be.visible',);
+        cy.get('#visibleAfter',{timeout:60000}).should('be.visible');
     })
 
     it('Wait the button appear - by using wait',() => {
         cy.visit('dynamic-properties')
         cy.wait (6000)
-        cy.get('#visibleAfter',{timeout:60000}).should('be.visible',);
+        cy.get('#visibleAfter',{timeout:60000}).should('be.visible');
     })
 })
 
 context ('Actions', () =>{
     it.only('Data should be correct', ()=>{
-        cy.visit('automation-practice-form')
+        cy.visit('/automation-practice-form')
         cy.fixture('profile').then(profileData =>{
             cy.get('#firstName')
             .clear()
@@ -58,7 +58,7 @@ context ('Actions', () =>{
                 .should('contain','Mobile')
                 .should('contain',JSON.stringify(profileData.profile_info.Mobile).replace(/\"/g, ""))
 
-            cy.get('tbody tr').eq(9)
+            cy.get('tbody tr').last()
                 .should('contain','State and City')
                 .should('contain',JSON.stringify(profileData.profile_info.State).replace(/\"/g, ""))
                 .should('contain',JSON.stringify(profileData.profile_info.City).replace(/\"/g, ""))
