@@ -1,3 +1,5 @@
+import '../../support/hooks'
+
 context('Actions', () => {
     it('should add new address', ()=> {
         cy.get('[data-test=create]').click()
