@@ -1,6 +1,6 @@
-import { LoginPage, loginPage} from '../../support/login.page'
-import { prodctPage, ProdctPage} from '../../support/prodList.page'
-import { cartPage, CartPage} from '../../support/cart.page'
+import { loginPage} from '../../support/login.page'
+import { prodctPage} from '../../support/prodList.page'
+import { cartPage} from '../../support/cart.page'
 
 describe('Page object practice',()=>{
     context('user should able to login',()=>{
